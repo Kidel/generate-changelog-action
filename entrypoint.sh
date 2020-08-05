@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-git clone --quiet https://github.com/$REPO &> /dev/null
+git clone --quiet -b $BRANCH --single-branch https://github.com/$REPO &> /dev/null
 
 changelog=$(generate-changelog $* --file -)
 

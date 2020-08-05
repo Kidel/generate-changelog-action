@@ -2,7 +2,7 @@
 
 git clone --quiet -b $BRANCH --single-branch https://github.com/$REPO &> /dev/null
 
-changelog=$(conventional-changelog $* -s)
+changelog=$(npx conventional-changelog $*)
 
 echo $changelog
 

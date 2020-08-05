@@ -2,7 +2,9 @@
 
 git clone --quiet -b $BRANCH --single-branch https://github.com/$REPO &> /dev/null
 
-changelog=`npx conventional-changelog`
+npm i
+
+changelog=`npm run conventional-changelog`
 
 changelog="${changelog//'%'/'%25'}"
 changelog="${changelog//$'\n'/'%0A'}"

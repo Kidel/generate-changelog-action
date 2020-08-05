@@ -2,7 +2,7 @@
 
 git clone --quiet -b $BRANCH --single-branch https://github.com/$REPO &> /dev/null
 
-npm i --save-dev conventional-changelog conventional-changelog-cli
+npm i conventional-changelog conventional-changelog-cli
 
 changelog=`./node_modules/.bin/conventional-changelog`
 
